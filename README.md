@@ -101,6 +101,7 @@ Phần 2: Build thành file .exe
     // mainWindow.webContents.openDevTools()
     }
 3. Trong file package.json thêm:
+//
     "build": {
         "extends": null,
         "appId": "com.example.electron-cra",

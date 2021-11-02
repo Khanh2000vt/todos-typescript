@@ -173,4 +173,3 @@ Phần 3: Các vấn đề chuyển từ ReactJS sang Electron.
         })
         ----------------------------------------------------------------
     
-"# todos-typescript" 

@@ -1,0 +1,71 @@
+.Add {
+    width: 50%;
+    margin-top: 60px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px;
+    border: 5px solid #cacaca;
+    border-radius: 10px;
+    height: 300px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Add > h1 {
+    font-size:50px;
+    margin: 0;
+    color:#ac7b00;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+.Add > input {
+    width: calc(100% - 54px);
+    margin: 5px 20px;
+    border-radius: 5px;
+    height:50px;
+    font-family: 'Comfortaa', cursive;
+    font-size:26px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #efefef;
+    
+}
+.Add > input:focus {
+    outline: none;
+}
+.add-button {
+    display: flex;
+    justify-content: center;
+}
+
+.Add > button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: calc(50% - 35px);
+    margin: 0 10px;
+    margin-top: 50px;
+    font-size:25px;
+    padding: 10px;
+    border: 1px solid #c7c4b9;
+    border-radius: 10px;
+}
+.link-btn {
+    width: 100%;
+}
+  
+button:hover {
+    border: 1px solid #fff;
+    color:white;
+}
+
+.submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(22, 0, 145, 0.24), 0 17px 50px 0 rgba(22,0,145,0.19);
+    background-color: rgba(22, 0, 145, 0.5);  
+}
+.cancel:hover {
+    box-shadow: 0 12px 16px 0 rgba(168, 0, 0, 0.24), 0 17px 50px 0 rgba(117, 0, 0, 0.19);
+    background-color: rgba(168, 0, 0, 0.5); 
+}

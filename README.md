@@ -28,7 +28,10 @@ Copy file main.js ở link đó dán vào file main.js vừa tạo.
 
 5. Chạy lệnh: yarn add @electron/remote.
 
-6.  - Trong file main.js thêm require('@electron/remote/main').initialize() sau dòng lệnh const {app, BrowserWindow} = require('electron')
+6.  - Trong file main.js thêm 
+        require('@electron/remote/main').initialize() 
+      sau dòng lệnh 
+        const {app, BrowserWindow} = require('electron')
     - Vẫn trong file main.js sửa:
     const win = new BrowserWindow({
         width: 800,
@@ -121,7 +124,7 @@ Package "electron" is only allowed in "devDependencies". Please remove it from t
 Package "electron-builder" is only allowed in "devDependencies". Please remove it from the "dependencies" section in your package.json.
 error Command failed with exit code 1.
 ---------------------------------------------
-FIXXX BUG (không biết kết quả ra sao)
+FIXXX BUG
 ------------------------
 1. Chạy lệnh: npm prune --production
 2. Chạy lại lệnh yarn electron:build
@@ -154,8 +157,7 @@ Phần 3: Các vấn đề chuyển từ ReactJS sang Electron.
 
 2. 
     - Các file icon .svg không hiện thị được trong Electron.
-    - Cách sửa lỗi: --> Thêm code này vào function createWindow của file main.js
-        ----------------------------------------------------------------
+    - Cách sửa lỗi: --> Thêm code này vào function createWindow của file main.js:
         win.webContents.on('dom-ready', () => {
             fs.readFile(path.join(__dirname, 'logo192.png'), 'utf8', (err, data) => {
                 if (err) throw err
